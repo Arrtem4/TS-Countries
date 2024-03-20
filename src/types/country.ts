@@ -25,6 +25,7 @@ export type Country = {
     topLevelDomain: string[];
     currencies: Currency[];
     languages: Language[];
+    borders: string[];
 };
 
 type Info = {
