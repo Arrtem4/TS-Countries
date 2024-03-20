@@ -1,4 +1,4 @@
-@import-normalize;
+/* @import-normalize; */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
 * {
@@ -25,6 +25,7 @@ body[data-theme='dark'] {
 
   --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
 }
+
 body[data-theme='light'] {
   --colors-text: hsl(200, 15%, 8%);
   --colors-bg: hsl(0, 0%, 98%);
