@@ -12,8 +12,12 @@ const ModeSwitcher = styled.div`
 const ThemeSwitcher = () => {
     const [theme, toggleTheme] = useTheme();
 
+    const localStorageThemeSwitcher = () => {
+        localStorage.setItem("theme", theme === "light" ? "dark" : "light");
+        toggleTheme();
+    };
     return (
-        <ModeSwitcher onClick={toggleTheme}>
+        <ModeSwitcher onClick={localStorageThemeSwitcher}>
             {theme === "light" ? (
                 <IoMoonOutline size="14px" />
             ) : (

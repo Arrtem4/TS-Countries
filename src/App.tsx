@@ -5,8 +5,10 @@ import { Main } from "components/Main";
 import { HomePage } from "pages/HomePage";
 import { Details } from "pages/Details";
 import { NotFound } from "pages/NotFound";
+import { useLocalTheme } from "features/theme/use-localTheme";
 
 export default function App() {
+    useLocalTheme();
     return (
         <>
             <Header />
