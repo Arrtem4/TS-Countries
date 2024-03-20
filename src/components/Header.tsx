@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 `;
 
 const Title = styled(Link).attrs({
@@ -24,6 +24,9 @@ const Title = styled(Link).attrs({
     font-size: var(--fs-sm);
     text-decoration: none;
     font-weight: var(--fw-bold);
+    background-color: var(--colors-bg);
+    padding: 0.5rem;
+    border-radius: var(--radii);
 `;
 
 export const Header = () => {
@@ -33,7 +36,7 @@ export const Header = () => {
         <HeaderEl>
             <Container>
                 <Wrapper>
-                    <Title onClick={cleanUp}>Where is the world?</Title>
+                    <Title onClick={cleanUp}>All countries</Title>
                     <ThemeSwitcher />
                 </Wrapper>
             </Container>
